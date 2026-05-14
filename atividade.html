@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Fome no Mundo</title>
+    <style>
+        /* Configurações Globais (Fonte e Fundo) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f7;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 1. Cabeçalho (Header) */
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center; /* Centralização de texto */
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #e67e22; /* Destaque em tom alaranjado/terra */
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        /* 2. Menu de Navegação */
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #e67e22;
+        }
+
+        /* Layout do Conteúdo Principal */
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 40px;
+            scroll-margin-top: 70px; /* Evita que o menu cubra o título ao navegar */
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 5px;
+        }
+
+        /* 3. Parágrafos */
+        p {
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        /* 4. Imagem */
+        .imagem-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .imagem-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .legenda-imagem {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* 5. Lista */
+        ul.causas-lista {
+            background-color: #fdf2e9;
+            padding: 20px 40px;
+            border-left: 5px solid #e67e22;
+            border-radius: 4px;
+        }
+
+        ul.causas-lista li {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        /* 6. Tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        /* Borda na tabela (Requisito obrigatório CSS) */
+        table, th, td {
+            border: 1px solid #bdc3c7;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #34495e;
+            color: #ffffff;
+        }
+
+        /* Efeito zebrado na tabela para melhor criatividade/design */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* 7. Rodapé (Footer) */
+        footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            text-align: center;
+            margin: 5px 0;
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Cabeçalho -->
+    <header>
+        <h1>A Fome no Mundo</h1>
+        <p>“Milhões de pessoas ainda sofrem com a falta de alimento.”</p>
+    </header>
+
+    <!-- 2. Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#dados">Dados</a></li>
+            <li><a href="#consequencias">Consequências</a></li>
+            <li><a href="#ajudar">Como ajudar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        
+        <!-- 3. Parágrafos (Explicações do Tema) -->
+        <section id="inicio">
+            <h2>O que é a Fome Mundial?</h2>
+            <p>A fome mundial é uma das crises humanitárias mais persistentes do nosso planeta, caracterizada pela escassez crônica e generalizada de alimentos básicos necessários para a sobrevivência e o desenvolvimento saudável das populações. Ela se manifesta de forma severa em regiões vulneráveis, impedindo que crianças cresçam com saúde e que adultos tenham a energia necessária para trabalhar e sustentar suas famílias de forma digna.</p>
+        </section>
+
+        <!-- 4. Imagem Integrada -->
+        <div class="imagem-container">
+            <!-- Imagem conceitual e livre de direitos autorais sobre agricultura/produção de alimentos -->
+            <img src="1-fome-1.jpg" alt="Campanha humanitária e distribuição de alimentos">
+            <p class="legenda-imagem">Ações humanitárias e o fortalecimento da agricultura local são caminhos para combater a insegurança alimentar.</p>
+        </div>
+
+        <section>
+            <h2>Causas da Fome</h2>
+            <p>As raízes desse problema são complexas e multifatoriais, envolvendo diretamente fatores econômicos, sociais e políticos. A instabilidade climática destrói lavouras inteiras, enquanto conflitos armados impedem o comércio e a distribuição de recursos e mantimentos de forma segura. O cenário é agravado pelo severo desperdício de comida em países desenvolvidos, que contrasta drasticamente com a incapacidade financeira de famílias de baixa renda de adquirirem itens básicos para a sua nutrição diária.</p>
+            
+            <!-- 5. Lista de Principais Causas -->
+            <h3>Principais causas da fome:</h3>
+            <ul class="causas-lista">
+                <li>Pobreza</li>
+                <li>Guerras</li>
+                <li>Desigualdade social</li>
+                <li>Desperdício de alimentos</li>
+                <li>Mudanças climáticas</li>
+            </ul>
+        </section>
+
+        <section id="consequencias">
+            <h2>Consequências Sociais</h2>
+            <p>As consequências sociais da subnutrição são devastadoras e perpetuam um ciclo vicioso de pobreza extrema nas nações afetadas. Além do aumento direto nas taxas de mortalidade infantil, a escassez de nutrientes compromete gravemente o desenvolvimento cognitivo e físico dos jovens, resultando em menor rendimento escolar e limitando suas oportunidades profissionais futuras. Esse cenário intensifica a exclusão social, gera ondas migratórias forçadas e fragiliza as estruturas econômicas dos países.</p>
+        </section>
+
+        <!-- 6. Tabela de Dados -->
+        <section id="dados">
+            <h2>Dados Globais sobre a Fome</h2>
+            <p>Abaixo estão representados os dados estatísticos recentes estimados sobre o impacto da insegurança alimentar por continente:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Continente</th>
+                        <th>Pessoas em situação de fome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>África</td>
+                        <td>282 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>Ásia</td>
+                        <td>402 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>América Latina</td>
+                        <td>56 milhões</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="ajudar">
+            <h2>Como Ajudar</h2>
+            <p>O combate à fome exige o esforço conjunto de governos, instituições privadas e cidadãos. É possível fazer a diferença apoiando e doando para campanhas humanitárias de credibilidade, evitando o desperdício diário em nossas casas, cobrando políticas públicas eficientes voltadas à agricultura familiar e promovendo a distribuição justa e igualitária de recursos em nossas comunidades.</p>
+        </section>
+
+    </main>
+
+    <!-- 7. Rodapé -->
+    <footer>
+        <p>Desenvolvido por: <strong>[Insira Seu Nome Aqui]</strong></p>
+        <p>Turma: <strong>[Insira Sua Turma]</strong></p>
+        <p>Ano: <strong>2026</strong></p>
+    </footer>
+
+</body>
+</html>
